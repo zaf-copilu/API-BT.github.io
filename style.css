@@ -817,7 +817,7 @@ mark {
     .text-container  {
         position: relative;
         bottom: 17vh;
-        margin-left: auto;
+        left: 55%;
         width: 40%;
         height: 300px;
     }
@@ -950,7 +950,7 @@ mark {
         border-radius: 10px;
     }
 
-    .comment:nth-child(1) {
+    /* .comment:nth-child(1) {
         height: 35vh;
     }
 
@@ -960,7 +960,7 @@ mark {
 
     .comment:nth-child(3),:nth-child(4) {
         height: 20vh;
-    }
+    } */
     
     .comment > .profile {
         position: relative;
@@ -994,7 +994,8 @@ mark {
         position: relative;
         left: 4vh;
         width: 80%;
-        height: 20vh;
+        bottom: 1.5vh;
+        height: auto;
         font-size: 13px;
     }
 
