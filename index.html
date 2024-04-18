@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>ApiBT</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+</head>
+<body>
+  <div class="top">
+    <h1 onClick="window.location.reload()">ApiBT</h1>
+    <div class="categorys">
+      <div class="selection" v-butt = "products" >Produse</div>
+      <div class="selection" v-butt = "about_us">Despre</div>
+      <div class="selection" v-butt = "team" >Echipa</div>
+    </div>  
+    <img src="img/contact-us.png" onclick="contact_us()">
+  </div>
+  <div class="main">
+    <div class="f-image">
+      <img src="img/honey.jpg">
+      <h1>Direct <br> <span style="position: relative; bottom: 6vh;"> din stup</span></h1>
+      <p>Mierea-i dulce, mierea-i bună, multă sănătate-adună!</p>
+      <button class="bn54" style="position: relative;bottom: 60vh; left: 60vh; height: 50px; width: 185px;">
+        <span class="bn54span">Produse</span>
+      </button>
+    </div>
+    <div class="product-recom">
+    <h1>Mierea pe care nu o <mark>gasesti</mark> <br>
+      nicaieri altundeva</h1>
+      <div class="hex">
+        <img src="img/miere_de_rapita.png" class="center">
+      </div>
+      <div class="text-container">
+        <div class="title">Calitatea pe primul loc</div>
+        <div class="content">
+          Tu meriti tot. Cea mai buna miere, cel mai bun gust si cele mai bune benefici sanitare.Tu meriti miere curata!Suntem mandri sa-ti oferim cea mai buna calitate a mierii la un pret bun.Mierea noasta pura si naturala 100%
+        </div>
+        <button class="bn54" style="position: relative; top: 3vh;">
+          <span class="bn54span">Produse</span>
+        </button>
+      </div>
+    </div>
+    <div class="comments-containers">
+      <h3>Testimoniale</h3>
+      <h2>Ce spun clienții despre noi</h2>
+      <div class="comments">
+        <div class="comment">
+          <div class="profile"><i class="bi bi-person"></i></div>
+          <div class="name">Sonia P.</div>
+          <div class="content">În ceea ce privește mierea... n-o pot lăuda îndejauns. Inițial, am comandat-o pentru niște probleme digestive pe care cred ca mi le-a ameliorat întrucâtva. Dar efectul pozitiv și imediat a fost pe migrenele care îmi fac viața un calvar de ani de zile, așa că de la o medie de 3 zile/săpt. chin, au ajuns să mă mai supere doar arareori! De asemenea, e minunată pentru durerile în gât. Am mai testat-o și cu altă ocazie și efectul (în cazul meu) a fost de diminuare rapidă a durerii.</div>
+        </div>
+        <div class="comment">
+          <div class="profile"><i class="bi bi-person"></i></div>
+          <div class="name">Eduard Z.</div>
+          <div class="content">Produse excelente de la un producător care se dedică trup și suflet acestei minunate meserii de apicultor! Deci, mulțumim atât albinelor cât și celor care au grijă de ele, dar și de noi</div>
+        </div>
+        <div class="comment">
+          <div class="profile"><i class="bi bi-person"></i></div>
+          <div class="name">Simona C.</div>
+          <div class="content">Într-o piață acaparată de produse care ne fac mai puțin bine, nu ne-am pierdut speranța în găsirea produselor naturale cu adevărat #BIO.</div>
+        </div>
+        <div class="comment">
+          <div class="profile"><i class="bi bi-person"></i></div>
+          <div class="name">Ioana A.</div>
+          <div class="content">Sunt produse de o înaltă calitate. Ambalate frumos și atractiv la prețuri accesibile. Felicitări!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="products" style="display: none;">
+    <div class="header">
+      <h3 style="color: #f5e163;">Produse</h3>
+      <h1 style="position: relative; bottom: 3vh;">Produsele Viitorului</h1>
+      <h4 style="color: grey; position: relative; bottom: 6vh;">Va oferim o varietate ca sa-ti satisfaca gusturile</h4>
+    </div>
+    <div class="items">
+      <div class="product">
+        <div class="hex">
+          <img src="img/miere_cu_ghimbir.png">
+        </div>
+        <p>Miere cu Ghimbir</p>
+        <div class="price"><p>20 lei</p></div>
+      </div>
+      <div class="product">
+        <div class="hex">
+          <img src="img/miere_de_catina.png">
+        </div>
+        <p>Miere de Catina</p>
+        <div class="price"><p>20 lei</p></div>
+      </div>
+      <div class="product">
+        <div class="hex">
+          <img src="img/miere_de_floareasoarelui.png">
+        </div>
+        <p>Miere de F.S</p>
+        <div class="price"><p>20 lei</p></div>
+      </div>
+      <div class="product">
+        <div class="hex">
+          <img src="img/miere_de_papadie.png">
+        </div>
+        <p>Miere de Papadie</p>
+        <div class="price"><p>20 lei</p></div>
+      </div>
+      <div class="product">
+        <div class="hex">
+          <img src="img/miere_de_poliflora.png">
+        </div>
+        <p>Miere de Poliflora</p>
+        <div class="price"><p>20 lei</p></div>
+      </div>
+      <div class="product">
+        <div class="hex">
+          <img src="img/miere_de_rapita.png">
+        </div>
+        <p>Miere de Rapita</p>
+        <div class="price"><p>20 lei</p></div>
+      </div>
+      <div class="product">
+        <div class="hex">
+          <img src="img/miere_de_salcam.png">
+        </div>
+        <p>Miere de Salcam</p>
+        <div class="price"><p>20 lei</p></div>
+      </div>
+      <div class="product">
+        <div class="hex">
+          <img src="img/miere_de_tei.png">
+        </div>
+        <p>Miere de Tei</p>
+        <div class="price"><p>20 lei</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="about_us" style="display: none;">
+      <div class="header">
+        <h3 style="color: #f5e163;">Despre noi</h3>
+        <h1 style="position: relative; bottom: 3vh;">Api Botosani</h1>
+      </div>
+      <div class="coduri">
+        <h2>Coduri CAEN</h2>
+        <div class="code">
+          <div class="code_container"><p>0149</p></div>
+          <p>- Creșterea altor animale</p>
+        </div>
+        <div class="code">
+          <div class="code_container"><p>1032</p></div>
+          <p>- Fabricarea sucurilor de fructe și legume</p>
+        </div>
+        <div class="code">
+          <div class="code_container"><p>4791</p></div>
+          <p> - Comerț cu amănuntul prin intermediul caselor de comenzi sau prin Internet</p>
+        </div>
+      </div>
+      <div class="poveste">
+        <h2>Povestea Noastra</h2>
+        <p>În adâncul Pădurii de 100 de faguri, în cel mai mare și mai generos stejar, locuia cel mai mare iubitor de miere - Winnie. <br>
+
+         <br> Într-una din zilele în care Winnie era în căutare de miere, se întâlnește cu Bizzy, o veche prietenă din copilărie. Aceasta era în căutarea unui nou cămin deoarece stupul ei a fost distrus de o furtună puternică. Înduioșat de poveste, Winnie se oferă să o găzduiască. <br>
+          
+          <br>Timpul trece iar Bizzy începe crearea unui nou stup, unde să producă miere, cu ajutorul lui Winnie care a plantat flori toată primăvara. După ani și ani de muncă, rezultatele au fost pe măsură. Cei doi au observat că vecinii lor, locuitori ai pădurii, au devenit interesați de mierea pe care o produceau așa că au beneficiat de oportunitate și și-au deschis o mică afacere cu miere. Totul mergea bine până când noii locuitori ai pădurii s-au plâns de lipsa de diversitate a produselor și vânzările lor au început să scadă. <br>
+          
+           <br> Într-o zi, pe când Bizzy se gândea la ce ar putea face ca să salveze afacerea și să atragă și clienții mai pretențioși, Winnie se înfrupta din coșul cu zmeură și își sorbea fără sfială ceaiul de păpădie. Într-un moment de neatenție, Winnie, scapă fructele și plantele din ceai în cazanele cu miere. Bizzy speriată le scoate cât poate de repede din cazane, dar Winnie pofticios de fel ia de la albinuță și gustă fructele, acum acoperite cu miere și sare de bucurie: <br>
+          
+           <br> - Nu am mai gustat ceva așa de bun până acum...spune Winnie sărind de bucurie. <br>
+          
+          <br> Bizzy curioasă gustă și ea. Un succes! <br>
+          
+          Și așa Winnie și Bizzy au hotărât să încerce să producă și miere cu plante. Au avut succes cu mai multe feluri de miere: de salcâm, de păpădie, tei, păducel și miere cu fructe de aronia. <br>
+      
+          <br>Anii trec și ei prosperă. Cel mai mare stejar, aflat acum in cel mai mare câmp de flori, locuit de cei mai buni prieteni și cu cea mai bună miere din Pădurea celor 100 de faguri.
+
+          Inspirați de povestea celor doi am decis să vă aducem si dumneavoastră rețetele pline de savoare și sănătate.  
+        </p>
+        <img class="first-image" src="img/Winniethepooh.png">
+        <img class="second-image" src="img/img-dec.png">
+        </div>        
+  </div>
+  <div class="team" style="display: none;">
+     <div class="team-members">
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>L. IOANA</h1>
+            <h4>Administrator</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>P. CRISTINA</h1>
+            <h4>Secretariat</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>A. COSMINA</h1>
+            <h4>Productie</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>C.MIRABELA</h1>
+            <h4>Productie</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>A. CĂTĂLIN</h1>
+            <h4>Productie</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>J. SABINA</h1>
+            <h4>Productie</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>B. ANAMARIA</h1>
+            <h4>Comp. Comercial</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>H. GABRIEL</h1>
+            <h4>Comp. Comercial</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>H. RĂZVAN</h1>
+            <h4>Comp. Comercial</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>O. PAULA</h1>
+            <h4>Comp. Comercial</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>M. R. SEBI</h1>
+            <h4>Comp. Comercial</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>C. NICOLETA</h1>
+            <h4>Comp. Marketing</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>V. FLORINA</h1>
+            <h4>Comp. Marketing</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>P.CONSTANTIN</h1>
+            <h4>Comp. Marketing</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>D. BIANCA</h1>
+            <h4>Comp. Marketing</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>H. DENIS</h1>
+            <h4>Comp. Marketing</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>I. ANDREI</h1>
+            <h4>Comp. R.U.</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>Ș. COSMINA</h1>
+            <h4>Comp. R.U.</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>C. IOANA</h1>
+            <h4>Comp. R.U.</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>Ț. IULIAN</h1>
+            <h4>Comp. R.U.</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>L.GEORGIANA</h1>
+            <h4>Comp. R.U.</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>P. DANIELA</h1>
+            <h4>Comp. F.C.</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>D. EMANUEL</h1>
+            <h4>Comp. F.C.</h4>
+          </div>
+         </div>
+         <div class="member">
+          <div class="img"><i class="bi bi-person"></i></div>
+          <div class="content">
+            <h1>S. IULIANA</h1>
+            <h4>Comp. F.C.</h4>
+          </div>
+         </div>
+     </div>
+  </div>
+  <div class="contact_us" style="display: none;">
+    <div class="header">
+      <h1>Contactati-ne</h1>
+    </div>
+    <p class="email">E-mail: <span style="color: #000000;">feapibt@gmail.com</span></p>
+    <p class="nr_telefon">Număr de telefon: <span style="color: #000000;">0743881714; 0231584027</span></p>
+    <p class="sediu">Sediu: <span style="color: #000000;">Strada Bucovina 33, Botoșani, România</span></p>
+    <div class="header" style="position: relative; bottom: 25vh;">
+      <h1>Trimite-ne un email</h1>
+    </div>
+    <div class="formular">
+      <div class="name">
+        <label class="label">Nume</label>
+        <input type="text" autocomplete="off" id="input1">
+      </div>
+      <div class="email">
+        <label class="label">Email</label>
+        <input type="text" autocomplete="off" id="input2" >
+      </div>
+      <div class="mesaj">
+        <label class="label">Mesaj</label>
+        <input type="text" autocomplete="off" id="input3">
+      </div>
+      <button class="bn54" style="position: relative; top: 2vh;height: 35px;width: 90px;" onclick="submit()" v-type = "submit">
+        <span class="bn54span">Trimite</span>
+      </button>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="module.js"></script>
+</body>
