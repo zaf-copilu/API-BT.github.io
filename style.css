@@ -771,11 +771,11 @@ mark {
     }
     
     .hex {
-        position: absolute;
+        position: relative;
         top: 3vh;
-        left: 1vh;
-        width: 204px;
-        height: 180px;
+        left: 4vh;
+        width: 174px;
+        height: 130px;
         background-color: #fdfae7;
         border-color: #fdfae7;
         position: relative;
@@ -785,12 +785,12 @@ mark {
     .hex:before {
         content: " ";
         width: 0; height: 0;
-        border-bottom: 50px solid;
+        border-bottom: 40px solid;
         border-color: inherit;
-        border-left: 102px solid transparent;
-        border-right: 102px solid transparent;
+        border-left: 87px solid transparent;
+        border-right: 87px solid transparent;
         position: absolute;
-        top: -49px;
+        top: -39px;
     }
     
     .hex:after {
@@ -798,11 +798,11 @@ mark {
         width: 0;
         position: absolute;
         right: 0vh;
-        bottom: -49px;
-        border-top: 50px solid;
+        bottom: -39px;
+        border-top: 40px solid;
         border-color: inherit;
-        border-left: 102px solid transparent;
-        border-right: 102px solid transparent;
+        border-left: 87px solid transparent;
+        border-right: 87px solid transparent;
     }
     
     .hex > img {
@@ -810,14 +810,14 @@ mark {
         margin-top: 2vh;
         margin-left: auto;
         margin-right: auto;
-        height: 15vh;
-        width: 15vh;
+        height: 10vh;
+        width: 10vh;
     }
     
     .text-container  {
         position: relative;
-        bottom: 20vh;
-        left: 25vh;
+        bottom: 17vh;
+        margin-left: auto;
         width: 40%;
         height: 300px;
     }
